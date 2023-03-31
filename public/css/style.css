@@ -1,0 +1,585 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    font-style: normal;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0.5em 6.8em;
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+}
+
+.nav_utama {
+    width: 100%;
+    padding: 0px;
+}
+
+.nav-link {
+    margin-right: 10px;
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #0D28A6;
+    font-weight: 700;
+}
+
+.off-navbar {
+    width: 50%;
+}
+
+.nav_btn {
+    height: 36px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    background-color: #5CB85F;
+}
+
+/* content desc sewa binar */
+.desc_sewa {
+    width: 100%;
+    padding-top: 80px;
+    background-color: #f1f3ff;
+    height: 100%;
+}
+
+.desc_utama {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.desc_kiri {
+    width: 100%;
+    padding-top: 70px;
+    margin-left: 109px;
+}
+
+.desc_kiri h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+.desc_kiri p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    width: 35vw;
+}
+
+.desc_kiri .btn {
+    width: 140px;
+    height: 36px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    background-color: #5CB85F;
+}
+
+.desc_kanan {
+    width: 50%;
+    position: relative;
+    right: 0;
+}
+
+.img-mobil {
+    position: relative;
+    width: 704px;
+    height: 400px;
+    margin-top: -15px;
+}
+
+
+/* ********** HERO SECTION END ********** */
+
+/* ********** CARI MOBIL SECTION BEGIN ********** */
+#cari-mobil {
+    margin-top: -120px;
+}
+
+#cm-search {
+    width: 80%;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+#cm-result {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 106px;
+}
+
+.cm-content {
+    max-width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.cm-content img {
+    align-self: center;
+    border-radius: 5px;
+}
+
+.cm-icon {
+    align-self: start;
+}
+/* ********** CARI MOBIL SECTION END ********** */
+
+/* ********** OUR SERVICES SECTION BEGIN ********** */
+.img-service{
+    max-width: 459px;
+    margin-top: 110px;
+    margin-left: 58px;
+}
+
+.desc-section {
+    margin-left: 16px;
+    margin-top: 104px;
+}
+
+.desc-section h2 b{
+    max-width: 468px;
+    font-size: 24px;
+    font-family: 'Helvetica';
+}
+
+.desc-section p{
+    margin-top: 24px;
+    font-family: 'Helvetica';
+}
+
+.desc-section p img{
+    margin-right: 16px;
+}
+
+/* ********** OUR SERVICES SECTION END ********** */
+
+/* ********** WHY US SECTION BEGIN ********** */
+.why-us-section{
+    margin-top: 100px;
+    font-family: 'Helvetica';
+}
+
+.why-us-section strong{
+    font-size: 24px;
+}
+
+.why-us-section p{
+    margin-top: 16px;
+    font-family:'Helvetica';
+    font-size: 14px;
+}
+
+.why-us-section .card img{
+    max-width: 32px;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.why-us-section .card h4{
+    margin-left: 24px;
+    margin-top: 16px;
+    font-family: 'Helvetica';
+    font-size: 16px;
+}
+
+.why-us-section .card p{
+    margin-left: 24px;
+    margin-top: 16px;
+    font-family: 'Helvetica';
+    font-size: 14px;
+}
+
+/* ********** WHY US SECTION END ********** */
+
+
+/* ********** TESTIMONY SECTION BEGIN ********** */
+
+.testimony-section {
+    margin-bottom: 100px;
+}
+
+.testimony-section .opening-text-testimony h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 100px;
+    margin-bottom: 16px;
+}
+
+.testimony-section .opening-text-testimony p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.testi-box {
+    max-width: 619px;
+    background-color: #F1F3FF;
+    border-radius: 8px;
+}
+
+.testi-box img {
+    width: 80px !important;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.text-review {
+    padding-top: 69px;
+    padding-bottom: 69px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+    width: 32px;
+}
+
+.testi-box .text-review .star img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 8px;
+}
+
+.testi-box p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.testi-box h5 {
+    font-weight: 1000;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.owl-prev, .owl-next {
+    margin: 10px;
+}
+
+.next-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background: #FFFFFF;;
+    border: 1px solid #C4C4C4;
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+.next-slide:hover {
+    color: white;
+    background-color: #5CB85F;
+    border: 1px solid #5CB85F;
+}
+
+.prev-slide {
+    width: 38px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+.prev-slide:hover {
+    background-color: #5CB85F;
+    border: 1px solid #5CB85F;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+/* ********** TESTIMONY SECTION END ********** */
+
+
+
+/* ********** PESAN SECTION BEGIN ********** */
+
+.pesan-section .card{
+    max-width: 1300px;
+    height: 326px;
+    border-radius: 13px;
+    background-color: #0D28A6;
+    
+}
+
+.pesan-section .card h1{
+    margin-top: 64px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pesan-section .card p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pesan-section .card .btn-reg{
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-style: bold;
+    max-width: 150px;
+    height: 36px;
+    margin-top: 52px;
+    margin-left: 514px;
+    background: #5CB85F;
+    border: none;
+    border-radius: 2px;
+    
+}
+
+/* ********** PESAN SECTION END ********** */
+
+/* ********** FAQ SECTION BEGIN ********** */
+
+.faq-intro{
+    margin-top: 104px;
+    max-width: 1300px;
+}
+
+.faq-intro h2{
+    font-family: 'Helvetica';
+    font-size: 24px;
+    max-width: 368px;
+}
+
+.faq-intro p{
+    font-family: 'Helvetica';
+    font-size: 14px;
+    max-Width: 368px;
+    
+}
+
+.list-questions{
+    font-family: 'Helvetica';
+    margin-top: 104px;
+}
+
+.list-questions .accordion-item{
+    margin-bottom: 16px;
+}
+
+/* ********** FAQ SECTION END ********** */
+
+/* ********** FOOTER SECTION BEGIN ********** */
+.footer-section {
+    margin-top: 150px;
+}
+
+.footer-section .alamat h5{
+    width: 268px;
+    height: 40px;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    margin-left: 86px;
+    margin-bottom: 16px;
+}
+
+.footer-section .navigation li{
+    margin-bottom: 16px;
+    margin-left: 56px;
+    list-style: none;
+    display: flex;
+}
+
+.footer-section .navigation li .dekor{
+    color: black;
+    text-decoration: none;
+}
+
+.sosmed {
+    margin-left: 86px;
+}
+
+.sosmed h5{
+    font-size: 14px;
+}
+
+.sosmed ul {
+    margin-top: 16px;
+    padding: 0;
+}
+
+.sosmed ul li {
+    list-style-type: none;
+    display: inline;
+ }
+
+.copyright {
+    margin-left: 86px;
+}
+
+.copyright h5{
+    font-size: 14px;
+}
+
+.copyright img{
+    width: 100px;
+    height: 34px;
+}
+/* ********** FOOTER SECTION END ********** */
+
+
+
+@media only screen and (min-width: 0) and (max-width: 576px) {
+    /* Navbar */
+    .navbar {
+        padding: 0px;
+    }
+
+    .nav_utama {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .navigation {
+        margin-top: -20px;
+    }
+
+    .nav_btn {
+        width: 65%;
+        height: 38px;
+        margin-top: 0px;
+        font-weight: bold;
+    }
+
+    /* content desc sewa binar */
+    .desc_sewa {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .desc_utama {
+        flex-direction: column;
+    }
+
+    .desc_kiri {
+        width: 100%;
+        padding-top: 0px;
+        margin-left: 0px;
+        padding-left: 12px;
+    }
+
+    .desc_kiri h1 {
+        width: 85vw;
+    }
+
+    .desc_kiri p {
+        width: 92vw;
+    }
+
+    .desc_kiri button {
+        margin-bottom: 24px;
+    }
+
+    .desc_kanan {
+        width: 100%;
+        padding-left: 12px;
+    }
+
+    .bg-mobil {
+        width: 100%;
+        height: 130px;
+    }
+
+    .img-mobil {
+        position: relative;
+        padding-right: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .our-service-section .img-service img{
+        width: 330px;
+        height: 300px;
+        align-items: center;
+    }
+
+    .why-us-section .text{
+        text-align: center;
+    }
+
+    .why-us-section .card{
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .owl-carousel img{
+        margin-top: 40px;
+    }
+
+    .owl-carousel .star{
+       justify-items: center;
+    }
+
+    .owl-carousel .item .testi-box {
+        width: 500px;
+        height: 500px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .pesan-section .card{
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .faq-section .faq-intro h2{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .faq-section .faq-intro p{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .faq-section .list-questions .accordion-item{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+}
