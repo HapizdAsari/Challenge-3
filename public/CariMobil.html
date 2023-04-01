@@ -79,62 +79,52 @@
       </div>
       <!-- content desc sewa binar car rental End -->
 
-
-      <!-- Cari Mobil -->
-    <div class="container-fluid" id="cari-mobil" style="margin-top: -60px;">
-        <div class="container card" id="cm-search">
-        <form id="cm-form">
-            <div class="row">
-                <div class="col">
-                    <p>Tipe Driver</p>
-                    <div class="input-group mb-3">
-                        <select class="form-select" id="list">
-                            <option hidden>Pilih Tipe Driver</option>
-                            <option value="true">Dengan Sopir</option>
-                            <option value="false">Tanpa Sopir (Lepas Kunci)</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col">
-                    <p>Tanggal</p>
-                    <div class="input-group mb-3">
-                        <input type="date" class="form-control" placeholder="Pilih Tanggal"
-                            aria-label="Pilih Tangggal">
-                    </div>
-                </div>
-                <div class="col">
-                    <p>Waktu Jemput/ Ambil</p>
-                    <div class="input-group mb-3">
-                        <select class="form-select" id="list3">
-                            <option hidden>Pilih Waktu</option>
-                            <option value="8">08:00 WIB</option>
-                            <option value="9">09:00 WIB</option>
-                            <option value="10">10:00 WIB</option>
-                            <option value="11">11:00 WIB</option>
-                            <option value="22">22:00 WIB</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <p>Jumlah Penumpang (Opsional)</p>
-                    <div class="input-group mb-3">
-                        <select class="form-select" id="list4">
-                            <option value="null">Jumlah Penumpang</option>
-                            <option value="1">1 orang</option>
-                            <option value="2">2 orang</option>
-                            <option value="3">3 orang</option>
-                            <option value="4">4 orang</option>
-                            <option value="5">5 orang</option>
-                            <option value="6">6 orang</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-2" style="align-self: center; margin-top: 20px;">
-                    <button type="submit" class="btn btn-success text-white">Cari Mobil</button>
-                </div>
+    <!-- Main start -->
+    <main>
+      <!-- search bar -->
+      <section class="search-box">
+        <div class="search-content">
+        <div class="input-group d-flex flex-column">
+            <p>Tipe Driver</p>
+            <select class="form-select" id="driver" required>
+            <option class="item" value="" selected>Pilih Tipe Driver</option>
+            <option class="item" value="true">Dengan Sopir</option>
+            <option class="item" value="false">
+                Tanpa Sopir (Lepas Kunci)
+            </option>
+            </select>
+        </div>
+        <div class="input-group d-flex flex-column">
+            <p>Tanggal</p>
+            <input type="date" class="form-control" id="date" required />
+        </div>
+        <div class="input-group d-flex flex-column pe-2">
+        <p>Waktu Jemput/Ambil</p>
+        <input type="time" id="time" class="form-control" required />
+      </div>
+        <div class="input-group d-flex flex-column">
+            <p>Jumlah Penumpang (Opsional)</p>
+            <div class="d-flex flex-row">
+            <input type="text" class="form-control item" id="passanger" style="background-color: #fff;"/>
+            <i class="bi bi-people-fill input-group-append people-icon"></i>
             </div>
-        </form>
-    </div>
+        </div>
+
+        <button type="submit" class="btn button-search" id="load-btn">
+            Cari Mobil
+        </button>
+        </div>
+    </section>
+    <!-- /search bar -->
+
+    <!-- Daftar Mobil Tersedia -->
+    <div class="container result-container">
+      <div class="result d-flex" id="cars-container">
+        <!-- Data JSON -->
+      </div>
+    <!-- /Daftar Mobil Tersedia -->
+  </main>
+  <!-- End main -->
     
 
     <!------------ FOOTER SECTION BEGIN ------------>
@@ -211,6 +201,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Example Javascript -->
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"

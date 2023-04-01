@@ -1,14 +1,21 @@
-const http = require('http');
-const PORT = 80;
+const express = require('express');
+const app = express();
+const port = 8000;
+const path = require('path')
 
-function onRequest(req, res){
-    console.log('request', req)
-    res.writeHead(200);
-    res.end("Halo, Ini dari server");
-}
+const publicDir = path.join(__dirname, '../public')
+app.use(express.static(publicDir))
 
-const server = http.createServer(onRequest);
+app.get('/', (req, res)=>{
+    res.status(200);
+    res.sendFile(path.join(publicDir,'index.html'))
+})
 
-server.listen(PORT, '127.0.0.1', ()=>{
-    console.log("SERVER SUDAH BERJALAN, SILAKAN DIBUKA https://127.0.0.1:%d", PORT);
+app.get('/cars', (req, res)=>{
+    res.status(200);
+    res.sendFile(path.join(publicDir,'CariMobil.html'))
+})
+
+app.listen(port,()=>{
+    console.log("Server sudah jalan..");
 })
