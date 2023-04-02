@@ -5,6 +5,13 @@ body {
     font-style: normal;
 }
 
+.vh-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Navbar */
 .navbar {
     padding: 0.5em 6.8em;
@@ -271,6 +278,7 @@ body {
 /* ********** TESTIMONY SECTION BEGIN ********** */
 
 .testimony-section {
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -278,7 +286,6 @@ body {
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
-    margin-top: 100px;
     margin-bottom: 16px;
 }
 
@@ -292,14 +299,16 @@ body {
 .testi-box {
     max-width: 619px;
     background-color: #F1F3FF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
 }
 
-.testi-box img {
+.testimony-section .testi-box img {
     width: 80px !important;
     height: 80px;
     border-radius: 100%;
 }
+
 
 .text-review {
     padding-top: 69px;
@@ -323,14 +332,14 @@ body {
 }
 
 .testi-box p {
-    font-weight: 300;
+    font-weight: 300 !important;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 8px;
 }
 
 .testi-box h5 {
-    font-weight: 1000;
+    font-weight: 1000 !important;
     font-size: 14px;
     line-height: 20px;
 }
@@ -346,7 +355,7 @@ body {
     align-items: center;
     width: 38px;
     height: 38px;
-    background: #FFFFFF;;
+    background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 50px;
     background-color: white;
@@ -360,6 +369,10 @@ body {
 }
 
 .prev-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 38px;
     height: 38px;
     background: #FFFFFF;
@@ -370,6 +383,7 @@ body {
 }
 
 .prev-slide:hover {
+    color: white;
     background-color: #5CB85F;
     border: 1px solid #5CB85F;
 }
@@ -381,7 +395,6 @@ body {
 }
 
 /* ********** TESTIMONY SECTION END ********** */
-
 
 
 /* ********** PESAN SECTION BEGIN ********** */
@@ -462,7 +475,7 @@ body {
 
 /* ********** FAQ SECTION END ********** */
 
-/* Footer */
+/* ********** FOOTER SECTION END ********** */
 
 .footer_utama {
     display: flex;
@@ -499,11 +512,11 @@ body {
     margin-left: 60px;
 }
 
-
+/* ********** FOOTER SECTION END ********** */
 
 
 @media only screen and (min-width: 0) and (max-width: 576px) {
-    /* Navbar */
+    
     .navbar {
         padding: 0px;
     }
@@ -524,7 +537,6 @@ body {
         font-weight: bold;
     }
 
-    /* content desc sewa binar */
     .desc_sewa {
         overflow: hidden;
         width: 100%;
@@ -607,7 +619,6 @@ body {
         margin-right: 16px;
     }
 
-    /* Footer */
     .footer_utama {
         flex-direction: column;
         padding: 16px ;
