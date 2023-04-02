@@ -462,63 +462,43 @@ body {
 
 /* ********** FAQ SECTION END ********** */
 
-/* ********** FOOTER SECTION BEGIN ********** */
-.footer-section {
-    margin-top: 150px;
-}
+/* Footer */
 
-.footer-section .alamat h5{
-    width: 268px;
-    height: 40px;
-    font-family: 'Helvetica';
-    font-size: 14px;
-    margin-left: 86px;
-    margin-bottom: 16px;
-}
-
-.footer-section .navigation li{
-    margin-bottom: 16px;
-    margin-left: 56px;
-    list-style: none;
+.footer_utama {
     display: flex;
+    padding: 100px 107px 0px 107px;
 }
 
-.footer-section .navigation li .dekor{
-    color: black;
-    text-decoration: none;
+.footer_alamat {
+    width: 27%;
 }
 
-.sosmed {
-    margin-left: 86px;
+.footer_link {
+    margin-left: 30px;
 }
 
-.sosmed h5{
-    font-size: 14px;
+.footer_link .nav-link{
+    margin-bottom: 16px;
 }
 
-.sosmed ul {
-    margin-top: 16px;
-    padding: 0;
+.footer_sosmed {
+    width: 27%;
+    margin-left: 70px;
 }
 
-.sosmed ul li {
-    list-style-type: none;
-    display: inline;
- }
-
-.copyright {
-    margin-left: 86px;
+.footer_sosmed img{
+    margin-right: 16px;
 }
 
-.copyright h5{
-    font-size: 14px;
+.footer_alamat a {
+    margin-right: 14px;
 }
 
-.copyright img{
-    width: 100px;
-    height: 34px;
+.footer_copy {
+    width: 20%;
+    margin-left: 60px;
 }
-/* ********** FOOTER SECTION END ********** */
+
 
 
 
@@ -548,6 +528,7 @@ body {
     .desc_sewa {
         overflow: hidden;
         width: 100%;
+        height: 670px;
     }
 
     .desc_utama {
@@ -579,15 +560,15 @@ body {
     }
 
     .bg-mobil {
-        width: 100%;
+        width: 0px;
         height: 130px;
     }
 
     .img-mobil {
-        position: relative;
         padding-right: 0px;
         width: 100%;
-        height: 100%;
+        top: 30px;
+        height: 350px;
     }
     .our-service-section .img-service img{
         width: 330px;
@@ -626,19 +607,39 @@ body {
         margin-right: 16px;
     }
 
-    .faq-section .faq-intro h2{
-        max-width: 100%;
-        text-align: center;
+    /* Footer */
+    .footer_utama {
+        flex-direction: column;
+        padding: 16px ;
     }
 
-    .faq-section .faq-intro p{
-        max-width: 100%;
-        text-align: center;
+    .footer_alamat {
+        padding: 0px 16px;
+        width: 100%;
     }
 
-    .faq-section .list-questions .accordion-item{
-        margin-left: 16px;
-        margin-right: 16px;
+    .footer_link {
+        font-size: 14px;
+        margin-left: 15px;
+        margin-bottom: 16px;
+    }
+
+    .footer_sosmed {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px 12px;
+        margin-bottom: 10px;
+    }
+
+    .footer_sosmed a {
+        display: inline;
+    }
+
+    .footer_copy {
+        width: 100%;
+        margin-left: 0px;
+        padding: 15px 12px;
+        margin-bottom: 20px;
     }
 
 }
